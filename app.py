@@ -6,7 +6,7 @@ Interactive demo of warehouse robot navigation for AI agents.
 
 import gradio as gr
 import numpy as np
-from openenv_warehouse import WarehouseEnv
+from openenv_warehouse import WarehouseEnv, WarehouseConfig
 
 
 def run_simulation(num_steps=50, grid_size=10, num_packages=3):
