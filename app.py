@@ -6,6 +6,12 @@ Interactive demo of warehouse robot navigation for AI agents.
 
 import gradio as gr
 import numpy as np
+import sys
+import os
+
+# Add the current directory to Python path to find openenv_warehouse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from openenv_warehouse import WarehouseEnv, WarehouseConfig
 
 
