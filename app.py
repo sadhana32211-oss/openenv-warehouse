@@ -11,7 +11,12 @@ import os
 # Add the current directory to Python path to find openenv_warehouse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from openenv_warehouse import WarehouseEnv, WarehouseConfig
+try:
+    from openenv_warehouse import WarehouseEnv, WarehouseConfig
+    HAS_ENVIRONMENT = True
+except ImportError:
+    HAS_ENVIRONMENT = False
+    print("Warning: openenv_warehouse module not found, using mock data")
 
 # Simple text-based interface since Gradio has issues
 def run_simulation(num_steps=50, grid_size=10, num_packages=3):
