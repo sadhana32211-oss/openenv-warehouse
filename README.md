@@ -1,3 +1,15 @@
+---
+title: OpenEnv Warehouse
+emoji: 🤖
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "3.50.2"
+python_version: "3.10"
+app_file: app.py
+pinned: false
+---
+
 # OpenEnv Warehouse
 
 A real-world reinforcement learning environment for warehouse robot navigation, implementing the standard OpenEnv API (`reset()`, `step()`, `state()`).
